@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>上传图片</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <div class="article-all">
+        <form enctype="multipart/form-data">
+
+            <!-- 评论框 -->
+            <section>
+                <div class="comment_share">
+                    <textarea id="exchanging" class="exchanging" name="exchanging-con" placeholder="分享交流心得最多只能输入140字..."></textarea>
+                    <div class="upload_all">
+                        <span class="attr_img"></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 显示图片 -->
+            <section class="show_sec">
+                <div class="my_container clear">
+                    <div class="uploaded">
+                        <div class="img"></div>
+                        <input type="file" accept="image/*" name="pic[]" class="input_file target"/>
+                    </div>
+                </div>
+            </section>
+
+            <!-- button -->
+            <section>
+                <div class="btn-all clear">
+                    <input type="reset" value="取消" class="reset"/>
+                    <input type="submit" value="提交" class="submit"/>
+                </div>
+            </section>
+
+        </form>
+    </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/public.js"></script>
+</html>
